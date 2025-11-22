@@ -1158,6 +1158,11 @@ namespace platf {
   }
 
   std::unique_ptr<audio_control_t> audio_control() {
+    // Don't initialize audio control if audio is disabled
+    if (config::audio.disable) {
+      return nullptr;
+    }
+
     auto control = std::make_unique<audio::audio_control_t>();
 
     if (control->init()) {

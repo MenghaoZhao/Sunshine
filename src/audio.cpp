@@ -178,7 +178,7 @@ namespace audio {
     }
 
     // Only the first to start a session may change the default sink
-    if (!ref->sink_flag->exchange(true, std::memory_order_acquire)) {
+    if (!config.disable && !ref->sink_flag->exchange(true, std::memory_order_acquire)) {
       // If the selected sink is different than the current one, change sinks.
       ref->restore_sink = ref->sink.host != *sink;
       if (ref->restore_sink) {

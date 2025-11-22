@@ -42,6 +42,14 @@ const config = ref(props.config)
       </div>
     </div>
 
+    <!-- Disable Audio Streaming -->
+    <Checkbox class="mb-3"
+              id="disable_audio"
+              locale-prefix="config"
+              v-model="config.disable_audio"
+              default="false"
+    ></Checkbox>
+
 
     <PlatformLayout :platform="platform">
       <template #windows>

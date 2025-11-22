@@ -130,6 +130,8 @@
     "audio_sink_desc_windows": "手动指定要抓取的特定音频设备。如果未设置，则自动选择该设备。 我们强烈建议将此字段留空以使用自动选择设备！ 如果您有多个具有相同名称的音频设备，您可以使用以下命令获取设备ID：",
     "audio_sink_placeholder_macos": "BlackHole 2ch",
     "audio_sink_placeholder_windows": "扬声器（High Definition Audio Device）",
+    "disable_audio": "禁用音频流传输",
+    "disable_audio_desc": "启用后，Sunshine 将不会向客户端传输音频，也不会更改默认音频输出设备。",
     "av1_mode": "AV1 支持",
     "av1_mode_0": "Sunshine 将基于编码器能力通告对 AV1 的支持（推荐）",
     "av1_mode_1": "Sunshine 将不会通告对 AV1 的支持",
