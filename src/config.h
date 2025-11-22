@@ -148,6 +148,7 @@ namespace config {
     std::string sink;
     std::string virtual_sink;
     bool install_steam_drivers;
+    bool disable;
   };
 
   constexpr int ENCRYPTION_MODE_NEVER = 0;  // Never use video encryption, even if the client supports it

@@ -130,6 +130,8 @@
     "audio_sink_desc_windows": "Manually specify a specific audio device to capture. If unset, the device is chosen automatically. We strongly recommend leaving this field blank to use automatic device selection! If you have multiple audio devices with identical names, you can get the Device ID using the following command:",
     "audio_sink_placeholder_macos": "BlackHole 2ch",
     "audio_sink_placeholder_windows": "Speakers (High Definition Audio Device)",
+    "disable_audio": "Disable Audio Streaming",
+    "disable_audio_desc": "When enabled, Sunshine will not stream audio to the client and will not change the default audio sink.",
     "av1_mode": "AV1 Support",
     "av1_mode_0": "Sunshine will advertise support for AV1 based on encoder capabilities (recommended)",
     "av1_mode_1": "Sunshine will not advertise support for AV1",
